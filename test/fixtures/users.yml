@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idcode: MyString
+  username: MyString
+  email: MyString
+  grade: MyString
+  classname: MyString
+  sex: MyString
+  score: 1
+
+two:
+  idcode: MyString
+  username: MyString
+  email: MyString
+  grade: MyString
+  classname: MyString
+  sex: MyString
+  score: 1

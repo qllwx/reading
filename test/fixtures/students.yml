@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idcard: MyString
+  name: MyString
+  grade: one
+  classname: one
+  sitno: 1
+  score: 1
+
+two:
+  idcard: MyString
+  name: MyString
+  grade: two
+  classname: two
+  sitno: 1
+  score: 1

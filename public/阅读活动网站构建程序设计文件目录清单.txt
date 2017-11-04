@@ -1,0 +1,409 @@
+reading
+├── app
+│   ├── assets
+│   │   ├── config
+│   │   │   └── manifest.js
+│   │   ├── images
+│   │   ├── javascripts
+│   │   │   ├── application.js
+│   │   │   ├── blogs.coffee
+│   │   │   ├── books.coffee
+│   │   │   ├── cable.js
+│   │   │   ├── channels
+│   │   │   ├── classnames.coffee
+│   │   │   ├── cshes.coffee
+│   │   │   ├── grades.coffee
+│   │   │   ├── home.coffee
+│   │   │   ├── items.coffee
+│   │   │   ├── reports.coffee
+│   │   │   ├── sexes.coffee
+│   │   │   ├── students.coffee
+│   │   │   └── users.coffee
+│   │   └── stylesheets
+│   │       ├── application.css
+│   │       ├── blogs.scss
+│   │       ├── books.scss
+│   │       ├── classnames.scss
+│   │       ├── cshes.scss
+│   │       ├── grades.scss
+│   │       ├── home.scss
+│   │       ├── reports.scss
+│   │       ├── scaffolds.scss
+│   │       ├── sexes.scss
+│   │       ├── students.scss
+│   │       └── users.scss
+│   ├── channels
+│   │   └── application_cable
+│   │       ├── channel.rb
+│   │       └── connection.rb
+│   ├── controllers
+│   │   ├── application_controller.rb
+│   │   ├── blogs_controller.rb
+│   │   ├── books_controller.rb
+│   │   ├── classnames_controller.rb
+│   │   ├── concerns
+│   │   ├── cshes_controller.rb
+│   │   ├── grades_controller.rb
+│   │   ├── home_controller.rb
+│   │   ├── items_controller.rb
+│   │   ├── reports_controller.rb
+│   │   ├── sexes_controller.rb
+│   │   ├── students_controller.rb
+│   │   └── users_controller.rb
+│   ├── helpers
+│   │   ├── application_helper.rb
+│   │   ├── blogs_helper.rb
+│   │   ├── books_helper.rb
+│   │   ├── classnames_helper.rb
+│   │   ├── cshes_helper.rb
+│   │   ├── grades_helper.rb
+│   │   ├── home_helper.rb
+│   │   ├── items_helper.rb
+│   │   ├── reports_helper.rb
+│   │   ├── sexes_helper.rb
+│   │   ├── students_helper.rb
+│   │   └── users_helper.rb
+│   ├── jobs
+│   │   └── application_job.rb
+│   ├── mailers
+│   │   └── application_mailer.rb
+│   ├── models
+│   │   ├── application_record.rb
+│   │   ├── blog.rb
+│   │   ├── book.rb
+│   │   ├── classname.rb
+│   │   ├── concerns
+│   │   ├── csh.rb
+│   │   ├── grade.rb
+│   │   ├── item.rb
+│   │   ├── report.rb
+│   │   ├── sex.rb
+│   │   ├── student.rb
+│   │   └── user.rb
+│   └── views
+│       ├── blogs
+│       │   ├── _blog.json.jbuilder
+│       │   ├── edit.html.erb
+│       │   ├── _form.html.erb
+│       │   ├── index.html.erb
+│       │   ├── index.json.jbuilder
+│       │   ├── new.html.erb
+│       │   ├── show.html.erb
+│       │   └── show.json.jbuilder
+│       ├── books
+│       │   ├── _book.json.jbuilder
+│       │   ├── edit.html.erb
+│       │   ├── _form.html.erb
+│       │   ├── index.html.erb
+│       │   ├── index.json.jbuilder
+│       │   ├── new.html.erb
+│       │   ├── show.html.erb
+│       │   └── show.json.jbuilder
+│       ├── classnames
+│       │   ├── _classname.json.jbuilder
+│       │   ├── edit.html.erb
+│       │   ├── _form.html.erb
+│       │   ├── index.html.erb
+│       │   ├── index.json.jbuilder
+│       │   ├── new.html.erb
+│       │   ├── show.html.erb
+│       │   └── show.json.jbuilder
+│       ├── cshes
+│       │   ├── _csh.json.jbuilder
+│       │   ├── edit.html.erb
+│       │   ├── _form.html.erb
+│       │   ├── index.html.erb
+│       │   ├── index.json.jbuilder
+│       │   ├── new.html.erb
+│       │   ├── show.html.erb
+│       │   └── show.json.jbuilder
+│       ├── grades
+│       │   ├── edit.html.erb
+│       │   ├── _form.html.erb
+│       │   ├── _grade.json.jbuilder
+│       │   ├── index.html.erb
+│       │   ├── index.json.jbuilder
+│       │   ├── new.html.erb
+│       │   ├── show.html.erb
+│       │   └── show.json.jbuilder
+│       ├── home
+│       │   ├── index.html
+│       │   └── index.html.erb
+│       ├── items
+│       │   ├── edit.html.erb
+│       │   ├── _form.html.erb
+│       │   ├── index.html.erb
+│       │   ├── index.json.jbuilder
+│       │   ├── _item.json.jbuilder
+│       │   ├── new.html.erb
+│       │   ├── show.html.erb
+│       │   └── show.json.jbuilder
+│       ├── layouts
+│       │   ├── application.html.erb
+│       │   ├── mailer.html.erb
+│       │   └── mailer.text.erb
+│       ├── reports
+│       │   ├── edit.html.erb
+│       │   ├── _form.html.erb
+│       │   ├── index.html.erb
+│       │   ├── index.json.jbuilder
+│       │   ├── new.html.erb
+│       │   ├── _report.json.jbuilder
+│       │   ├── show.html.erb
+│       │   └── show.json.jbuilder
+│       ├── sexes
+│       │   ├── edit.html.erb
+│       │   ├── _form.html.erb
+│       │   ├── index.html.erb
+│       │   ├── index.json.jbuilder
+│       │   ├── new.html.erb
+│       │   ├── _sex.json.jbuilder
+│       │   ├── show.html.erb
+│       │   └── show.json.jbuilder
+│       ├── students
+│       │   ├── edit.html.erb
+│       │   ├── _form.html.erb
+│       │   ├── index.html.erb
+│       │   ├── index.json.jbuilder
+│       │   ├── new.html.erb
+│       │   ├── show.html.erb
+│       │   ├── show.json.jbuilder
+│       │   └── _student.json.jbuilder
+│       └── users
+│           ├── edit.html.erb
+│           ├── _form.html.erb
+│           ├── index.html.erb
+│           ├── index.json.jbuilder
+│           ├── new.html.erb
+│           ├── show.html.erb
+│           ├── show.json.jbuilder
+│           └── _user.json.jbuilder
+├── bin
+│   ├── bundle
+│   ├── rails
+│   ├── rake
+│   ├── setup
+│   ├── update
+│   └── yarn
+├── config
+│   ├── application.rb
+│   ├── boot.rb
+│   ├── cable.yml
+│   ├── database2.yml
+│   ├── database.yml
+│   ├── environment.rb
+│   ├── environments
+│   │   ├── development.rb
+│   │   ├── production.rb
+│   │   └── test.rb
+│   ├── initializers
+│   │   ├── application_controller_renderer.rb
+│   │   ├── assets.rb
+│   │   ├── backtrace_silencers.rb
+│   │   ├── cookies_serializer.rb
+│   │   ├── filter_parameter_logging.rb
+│   │   ├── homeland.rb
+│   │   ├── inflections.rb
+│   │   ├── mime_types.rb
+│   │   ├── will_paginate.rb
+│   │   └── wrap_parameters.rb
+│   ├── locales
+│   │   ├── en.yml
+│   │   └── homeland.zh-CN.yml
+│   ├── puma.rb
+│   ├── routes.rb
+│   ├── secrets.yml
+│   └── spring.rb
+├── config.ru
+├── db
+│   ├── 2016_sm_chs.csv
+│   ├── development.sqlite3
+│   ├── migrate
+│   │   ├── 20170911065025_create_users.rb
+│   │   ├── 20170911065631_create_reports.rb
+│   │   ├── 20170911065904_create_books.rb
+│   │   ├── 20170911075809_create_sexes.rb
+│   │   ├── 20170911075927_create_grades.rb
+│   │   ├── 20170913025010_create_classnames.rb
+│   │   ├── 20170913034248_create_students.rb
+│   │   ├── 20170914032922_create_cshes.rb
+│   │   ├── 20170915033301_create_blogs.rb
+│   │   └── 20170915033303_create_items.rb
+│   ├── schema.rb
+│   ├── seeds.rb
+│   └── test.sqlite3
+├── Gemfile
+├── Gemfile.lock
+├── import_csh.rb
+├── lib
+│   ├── assets
+│   └── tasks
+│       └── csh_add.rake
+├── log
+│   └── development.log
+├── package.json
+├── public
+│   ├── 404.html
+│   ├── 422.html
+│   ├── 500.html
+│   ├── apple-touch-icon.png
+│   ├── apple-touch-icon-precomposed.png
+│   ├── favicon.ico
+│   ├── flags
+│   │   ├── flag-2arrow-down.png
+│   │   ├── flag-2arrow-up.png
+│   │   ├── flag-arrow-down.png
+│   │   ├── flag-arrow-up.png
+│   │   ├── flag-clock.png
+│   │   ├── flag-cross-red.png
+│   │   ├── flag-exclamationmark.png
+│   │   ├── flag-flash.png
+│   │   ├── flag-heart.png
+│   │   ├── flag-hideexport.png
+│   │   ├── flag-hook-green.png
+│   │   ├── flag-info.png
+│   │   ├── flag-lamp.png
+│   │   ├── flag-lifebelt.png
+│   │   ├── flag-note.png
+│   │   ├── flag-phone.png
+│   │   ├── flag-present.png
+│   │   ├── flag-questionmark.png
+│   │   ├── flag-rose.png
+│   │   ├── flag-scrolled-right.png
+│   │   ├── flag-smiley-good.png
+│   │   ├── flag-smiley-omb.png
+│   │   ├── flag-smiley-sad.png
+│   │   ├── flag-stopsign.png
+│   │   ├── flag-target.png
+│   │   ├── flag-task-finished.png
+│   │   ├── flag-task-new-morning.png
+│   │   ├── flag-task-new.png
+│   │   ├── flag-task-new-sleeping.png
+│   │   ├── flag-task.png
+│   │   ├── flag-task-wip-morning.png
+│   │   ├── flag-task-wip.png
+│   │   ├── flag-task-wip-sleeping.png
+│   │   ├── flag-thumb-down.png
+│   │   ├── flag-thumb-up.png
+│   │   ├── flag-tmpUnscrolled-right.png
+│   │   ├── flag-url-16x16.png
+│   │   ├── flag-url-bugzilla-novell-closed.png
+│   │   ├── flag-url-bugzilla-novell.png
+│   │   ├── flag-urlnew.png
+│   │   ├── flag-url.png
+│   │   ├── flag-vymlinknew.png
+│   │   ├── flag-vymlink.png
+│   │   ├── flag-wip.png
+│   │   └── freemind
+│   │       ├── attach.png
+│   │       ├── back.png
+│   │       ├── bell.png
+│   │       ├── bookmark.png
+│   │       ├── clanbomber.png
+│   │       ├── desktopnew.png
+│   │       ├── flag.png
+│   │       ├── forward.png
+│   │       ├── gohome.png
+│   │       ├── help.png
+│   │       ├── idea.png
+│   │       ├── kaddressbook.png
+│   │       ├── knotify.png
+│   │       ├── korn.png
+│   │       ├── licq.png
+│   │       ├── mail.png
+│   │       ├── password.png
+│   │       ├── pencil.png
+│   │       ├── penguin.png
+│   │       ├── priority-1.png
+│   │       ├── priority-2.png
+│   │       ├── priority-3.png
+│   │       ├── priority-4.png
+│   │       ├── priority-5.png
+│   │       ├── priority-6.png
+│   │       ├── priority-7.png
+│   │       ├── stop.png
+│   │       ├── warning.png
+│   │       ├── wizard.png
+│   │       └── xmag.png
+│   ├── index.png
+│   ├── reading
+│   ├── reading-plan.html
+│   ├── reading-plan.png
+│   ├── robots.txt
+│   ├── vym.css
+│   └── 清流实验中学2017阅读书目题库.rar
+├── Rakefile
+├── README.md
+├── test
+│   ├── application_system_test_case.rb
+│   ├── controllers
+│   │   ├── blogs_controller_test.rb
+│   │   ├── books_controller_test.rb
+│   │   ├── classnames_controller_test.rb
+│   │   ├── cshes_controller_test.rb
+│   │   ├── grades_controller_test.rb
+│   │   ├── home_controller_test.rb
+│   │   ├── items_controller_test.rb
+│   │   ├── reports_controller_test.rb
+│   │   ├── sexes_controller_test.rb
+│   │   ├── students_controller_test.rb
+│   │   └── users_controller_test.rb
+│   ├── fixtures
+│   │   ├── blogs.yml
+│   │   ├── books.yml
+│   │   ├── classnames.yml
+│   │   ├── cshes.yml
+│   │   ├── files
+│   │   ├── grades.yml
+│   │   ├── items.yml
+│   │   ├── reports.yml
+│   │   ├── sexes.yml
+│   │   ├── students.yml
+│   │   └── users.yml
+│   ├── helpers
+│   ├── integration
+│   ├── mailers
+│   ├── models
+│   │   ├── blog_test.rb
+│   │   ├── book_test.rb
+│   │   ├── classname_test.rb
+│   │   ├── csh_test.rb
+│   │   ├── grade_test.rb
+│   │   ├── item_test.rb
+│   │   ├── report_test.rb
+│   │   ├── sex_test.rb
+│   │   ├── student_test.rb
+│   │   └── user_test.rb
+│   ├── system
+│   │   ├── blogs_test.rb
+│   │   ├── books_test.rb
+│   │   ├── classnames_test.rb
+│   │   ├── cshes_test.rb
+│   │   ├── grades_test.rb
+│   │   ├── items_test.rb
+│   │   ├── reports_test.rb
+│   │   ├── sexes_test.rb
+│   │   ├── students_test.rb
+│   │   └── users_test.rb
+│   └── test_helper.rb
+├── tmp
+│   ├── cache
+│   │   └── assets
+│   │       └── sprockets
+│   │           └── v3.0
+│   ├── pids
+│   ├── restart.txt
+│   └── sockets
+├── tree.txt
+└── vendor
+    └── assets
+        ├── images
+        │   └── jquery.chosen.png
+        ├── javascripts
+        │   ├── jquery.chosen.js
+        │   ├── jquery.hotkeys.js
+        │   └── jquery.timeago.js
+        └── stylesheets
+            └── jquery.chosen.scss
+
+445 directories, 735 files

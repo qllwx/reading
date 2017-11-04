@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  area: MyString
+  school: MyString
+  sit_no: 1
+  grade: MyString
+  c_name: MyString
+  s_no: MyString
+  name: MyString
+  sex: MyString
+  score: 1
+  pj: MyString
+  period: MyString
+
+two:
+  area: MyString
+  school: MyString
+  sit_no: 1
+  grade: MyString
+  c_name: MyString
+  s_no: MyString
+  name: MyString
+  sex: MyString
+  score: 1
+  pj: MyString
+  period: MyString

@@ -1,0 +1,72 @@
+<%= form_with(model: csh, local: true) do |form| %>
+  <% if csh.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(csh.errors.count, "error") %> prohibited this csh from being saved:</h2>
+
+      <ul>
+      <% csh.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :area %>
+    <%= form.text_field :area, id: :csh_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :school %>
+    <%= form.text_field :school, id: :csh_school %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sit_no %>
+    <%= form.number_field :sit_no, id: :csh_sit_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade %>
+    <%= form.text_field :grade, id: :csh_grade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_name %>
+    <%= form.text_field :c_name, id: :csh_c_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :s_no %>
+    <%= form.text_field :s_no, id: :csh_s_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :csh_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sex %>
+    <%= form.text_field :sex, id: :csh_sex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.number_field :score, id: :csh_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pj %>
+    <%= form.text_field :pj, id: :csh_pj %>
+  </div>
+
+  <div class="field">
+    <%= form.label :period %>
+    <%= form.text_field :period, id: :csh_period %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

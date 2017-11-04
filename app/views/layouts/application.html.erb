@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reading</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	<header>
+		<h1>书香校园 大阅读活动 </h1>
+	</header>
+
+	<nav>
+	<a href="/">首   页</a><br>
+	<a href="/reading-plan.html">活动方案</a><br>
+		<%= link_to '推荐书目', books_path %><br>
+		<%= link_to '读书报告', reports_path %><br>
+   		<%= link_to 'Back', reports_path %>题  库<br>
+		<%= link_to '用户管理', users_path %><br>
+	</nav>
+
+	<section>
+	  <%= yield %>
+	</section>
+        <summary>
+         
+        </summary>    
+	<footer>
+		Copyright qllwx@139.com
+	</footer>
+
+  
+  </body>
+</html>

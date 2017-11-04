@@ -1,0 +1,2 @@
+class Csh < ApplicationRecord
+end

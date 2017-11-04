@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cshes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>School</th>
+      <th>Sit no</th>
+      <th>Grade</th>
+      <th>C name</th>
+      <th>S no</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Score</th>
+      <th>Pj</th>
+      <th>Period</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cshes.each do |csh| %>
+      <tr>
+        <td><%= csh.area %></td>
+        <td><%= csh.school %></td>
+        <td><%= csh.sit_no %></td>
+        <td><%= csh.grade %></td>
+        <td><%= csh.c_name %></td>
+        <td><%= csh.s_no %></td>
+        <td><%= csh.name %></td>
+        <td><%= csh.sex %></td>
+        <td><%= csh.score %></td>
+        <td><%= csh.pj %></td>
+        <td><%= csh.period %></td>
+        <td><%= link_to 'Show', csh %></td>
+        <td><%= link_to 'Edit', edit_csh_path(csh) %></td>
+        <td><%= link_to 'Destroy', csh, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= will_paginate @cshes %>
+<%= link_to 'New Csh', new_csh_path %>

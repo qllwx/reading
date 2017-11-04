@@ -1,0 +1,2 @@
+module CshesHelper
+end

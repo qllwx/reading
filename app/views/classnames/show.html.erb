@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%=t('classname')%>:</strong>
+  <%= @classname.classname %>
+</p>
+
+<%= link_to t('Edit'), edit_classname_path(@classname) %> |
+<%= link_to t('Back'), classnames_path %>

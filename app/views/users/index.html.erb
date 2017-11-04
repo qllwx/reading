@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%=t('idcode')%></th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Grade</th>
+      <th>Classname</th>
+      <th>Sex</th>
+      <th>Score</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.idcode %></td>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td><%= user.grade %></td>
+        <td><%= user.classname %></td>
+        <td><%= user.sex %></td>
+        <td><%= user.score %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= will_paginate @users %>
+<%= link_to 'New User', new_user_path %>
