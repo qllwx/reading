@@ -14,6 +14,13 @@ Rails 5.1.4
 * Configuration
 
 * Database creation
+rails g scaffold sex name:string
+rails g scaffold grade name:string
+rails g scaffold classname name:string
+rails g scaffold student idcard:string name:string grade:references classname:references sitno:integer score:integer
+rails g scaffold user idcard:string username:string sex:integer email:string grade:string classname:string sit:integer score:integer
+rails g scaffold report idcard:references bookname:string bookreport:text
+rails g scaffold book bookname:string summary:string pic:string
 
 * Database initialization
 
@@ -23,12 +30,4 @@ Rails 5.1.4
 
 * Deployment instructions
 
-* program 
-rails g scaffold sex name:string
-rails g scaffold grade name:string
-rails g scaffold classname name:string
-rails g scaffold student idcard:string name:string grade:references classname:references sitno:integer score:integer
-rails g scaffold user idcard:string username:string sex:integer email:string grade:string classname:string sit:integer score:integer
-rails g scaffold report idcard:references bookname:string bookreport:text
-rails g scaffold book bookname:string summary:string pic:string
-
+* program
